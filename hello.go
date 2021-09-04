@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello, world")
+	var new int = 1234
+	fmt.Println(new)
 }
 
 /*
