@@ -8,7 +8,7 @@ const (
 	nameKey = "name"
 )
 const z = 20 * 10
-var h = [3]int{5,7,9}
+var h = [12]int{1, 5: 4, 6, 10: 100, 15}
 	
 func main() {
 	const y = "hello"
