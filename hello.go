@@ -19,6 +19,18 @@ func main() {
 	fmt.Println(p)
 	p = 30
 	fmt.Println(i, len(i), cap(i))
+	i = append(i, 30)
+	fmt.Println(i, len(i), cap(i))
+	i = append(i, 40)
+	fmt.Println(i, len(i), cap(i))
+	i = append(i, 50)
+	fmt.Println(i, len(i), cap(i))
+	i = append(i, 60)
+	fmt.Println(i, len(i), cap(i))
+	i = append(i, 70)
+	fmt.Println(i, len(i), cap(i))
+	i = append(i, 80)
+	fmt.Println(i, len(i), cap(i))
 }
 
 /*
