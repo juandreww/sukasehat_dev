@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-const x int64 = 10
 const (
 	idKey = "id"
 	nameKey = "name"
@@ -10,20 +9,16 @@ const (
 const z = 20 * 10
 var h = [12]int{1, 5: 4, 6, 10: 100, 15}
 var j = [...]int{1,2,3,4,5,6,7,8,9,10,11,12} //j == h > true
+var i []int
 	
 func main() {
 	const y = "hello"
-	fmt.Println(x)
-	fmt.Println(y)
-	x = x + 1
-	y = "bye"
-	fmt.Println(x)
-	fmt.Println(y)
 
 	p := 10
 	p = 20
 	fmt.Println(p)
 	p = 30
+	fmt.Println(i, len(i), cap(i))
 }
 
 /*
