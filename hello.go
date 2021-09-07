@@ -8,6 +8,7 @@ const (
 	nameKey = "name"
 )
 const z = 20 * 10
+var h = [3]int{5,7,9}
 	
 func main() {
 	const y = "hello"
@@ -17,6 +18,11 @@ func main() {
 	y = "bye"
 	fmt.Println(x)
 	fmt.Println(y)
+
+	p := 10
+	p = 20
+	fmt.Println(p)
+	p = 30
 }
 
 /*
