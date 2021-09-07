@@ -9,6 +9,7 @@ const (
 )
 const z = 20 * 10
 var h = [12]int{1, 5: 4, 6, 10: 100, 15}
+var j = [...]int{1,2,3,4,5,6,7,8,9,10,11,12} //j == h > true
 	
 func main() {
 	const y = "hello"
