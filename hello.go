@@ -13,7 +13,7 @@ var i []int
 	
 func main() {
 	const y = "hello"
-	//
+	slc := make([]int, 10)
 	p := 10
 	p = 20
 	fmt.Println(p)
