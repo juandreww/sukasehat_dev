@@ -6,32 +6,21 @@ const (
 	idKey = "id"
 	nameKey = "name"
 )
-const z = 20 * 10
-var h = [12]int{1, 5: 4, 6, 10: 100, 15}
-var j = [...]int{1,2,3,4,5,6,7,8,9,10,11,12} //j == h > true
-var i []int
+// const z = 20 * 10
+// var h = [12]int{1, 5: 4, 6, 10: 100, 15}
+// var j = [...]int{1,2,3,4,5,6,7,8,9,10,11,12} //j == h > true
+// var i []int
 	
 func main() {
-	const y = "hello"
-	slc := make([]int, 10)
-	slc = append(slc, 10) // ini akan masuk ke baris ke 11 slc[10]
-	p := 10
-	p = 20
-	fmt.Println(p)
-	p = 30
-	fmt.Println(i, len(i), cap(i))
-	i = append(i, 30)
-	fmt.Println(i, len(i), cap(i))
-	i = append(i, 40)
-	fmt.Println(i, len(i), cap(i))
-	i = append(i, 50)
-	fmt.Println(i, len(i), cap(i))
-	i = append(i, 60)
-	fmt.Println(i, len(i), cap(i))
-	i = append(i, 70)
-	fmt.Println(i, len(i), cap(i))
-	i = append(i, 80)
-	fmt.Println(i, len(i), cap(i))
+	x := []int{1,2,3,4}
+	y := x[:2]
+	z := x[1:]
+	x[1] = 20
+	y[0] = 10
+	z[1] = 30
+	fmt.Println(x)
+	fmt.Println(y)
+	fmt.Println(z)
 }
 
 /*
