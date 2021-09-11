@@ -14,6 +14,7 @@ var i []int
 func main() {
 	const y = "hello"
 	slc := make([]int, 10)
+	slc = append(slc, 10) // ini akan masuk ke baris ke 11 slc[10]
 	p := 10
 	p = 20
 	fmt.Println(p)
