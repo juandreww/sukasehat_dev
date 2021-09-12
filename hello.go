@@ -12,17 +12,14 @@ const (
 // var i []int
 	
 func main() {
-	
-	m := map[string]int{
-		"hello": 5,
-		"world": 0,
-		}
-		v, ok := m["hello"]
-		fmt.Println(v, ok)
-		v, ok = m["world"]
-		fmt.Println(v, ok)
-		v, ok = m["goodbye"]
-		fmt.Println(v, ok)
+	intSet := map[int]struct{}{}
+	vals := []int{5, 10, 2, 5, 8, 7, 3, 9, 1, 2, 10}
+	for _, v := range vals {
+		intSet[v] = struct{}{}
+	}
+	if _, ok := intSet[5]; ok {
+		fmt.Println("5 is in the set")
+	}
 }
 
 /*
