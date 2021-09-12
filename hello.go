@@ -12,18 +12,17 @@ const (
 // var i []int
 	
 func main() {
-	x := make([]int, 0, 5)
-x = append(x, 1, 2, 3, 4)
-y := x[:2:2]
-z := x[2:4:4]
-fmt.Println(cap(x), cap(y), cap(z))
-y = append(y, 30, 40, 50)
-x = append(x, 60)
-z = append(z, 70)
-
-fmt.Println("x:", x)
-fmt.Println("y:", y)
-fmt.Println("z:", z)
+	
+	m := map[string]int{
+		"hello": 5,
+		"world": 0,
+		}
+		v, ok := m["hello"]
+		fmt.Println(v, ok)
+		v, ok = m["world"]
+		fmt.Println(v, ok)
+		v, ok = m["goodbye"]
+		fmt.Println(v, ok)
 }
 
 /*
