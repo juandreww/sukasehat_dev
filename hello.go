@@ -20,6 +20,7 @@ func main() {
 	if _, ok := intSet[5]; ok {
 		fmt.Println("5 is in the set")
 	}
+	//
 }
 
 /*
