@@ -10,6 +10,7 @@ lint: fmt
 
 vet: fmt
 	go vet ./...
+	go vet ./...
 .PHONY:vet
 
 build: vet
