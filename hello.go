@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+import "math/rand"
 
 const (
 	idKey   = "id"
@@ -13,14 +14,16 @@ const (
 // var i []int
 
 func main() {
-	x := 10
-	if x > 5 {
-		fmt.Println(x)
-		x := 5
-		fmt.Println(x)
+	n := rand.Intn(10)
+	if n == 0 {
+		fmt.Println("That's too low")
+	} else if n > 5 {
+		fmt.Println("That's too big:", n)
+	} else {
+		fmt.Println("That's a good number:", n)
 	}
-	fmt.Println(x)
 }
+//
 //
 /*
 	Literals:
