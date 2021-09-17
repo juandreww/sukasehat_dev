@@ -14,14 +14,27 @@ const (
 // var i []int
 
 func main() {
-	n := rand.Intn(10)
-	if n == 0 {
-		fmt.Println("That's too low")
-	} else if n > 5 {
-		fmt.Println("That's too big:", n)
-	} else {
-		fmt.Println("That's a good number:", n)
-	}
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	} // complete loop
+
+	i := 1
+	for i < 100 {
+		fmt.Println(i)
+		i = i * 2
+	} // conditional loop
+
+	for {
+		fmt.Println("Hello")
+	} // infinite loop
+
+	for {
+		// things to do in the loop
+		if !CONDITION {
+		break
+		}
+	} // do while loop in golang mode
+	
 }
 //
 
