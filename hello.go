@@ -1,7 +1,7 @@
 package main
 
 import "fmt"
-import "math/rand"
+// import "math/rand"
 
 const (
 	idKey   = "id"
@@ -24,17 +24,21 @@ func main() {
 		i = i * 2
 	} // conditional loop
 
-	for {
-		fmt.Println("Hello")
-	} // infinite loop
+	// for {
+	// 	fmt.Println("Hello")
+	// } // infinite loop
 
-	for {
-		// things to do in the loop
-		if !CONDITION {
-		break
-		}
-	} // do while loop in golang mode
-	
+	// for {
+	// 	// things to do in the loop
+	// 	if !CONDITION {
+	// 	break
+	// 	}
+	// } // do while loop in golang mode
+
+	evenVals := []int{2, 4, 6, 8, 10, 12}
+	for i, v := range evenVals {
+		fmt.Println(i, v)
+	}
 }
 //
 
