@@ -27,7 +27,7 @@ func main() {
 	// for {
 	// 	fmt.Println("Hello")
 	// } // infinite loop
-
+	
 	// for {
 	// 	// things to do in the loop
 	// 	if !CONDITION {
@@ -40,7 +40,6 @@ func main() {
 		fmt.Println(i, v)
 	}
 }
-//
 
 /*
 	Literals:
