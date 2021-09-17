@@ -24,7 +24,7 @@ func main() {
 	}
 }
 //
-//
+
 /*
 	Literals:
 	// 0d54 is Decimal
