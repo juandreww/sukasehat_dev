@@ -14,31 +14,12 @@ const (
 // var i []int
 
 func main() {
-	for i := 0; i < 10; i++ {
-		fmt.Println(i)
-	} // complete loop
-
-	i := 1
-	for i < 100 {
-		fmt.Println(i)
-		i = i * 2
-	} // conditional loop
-
-	// for {
-	// 	fmt.Println("Hello")
-	// } // infinite loop
-	
-	// for {
-	// 	// things to do in the loop
-	// 	if !CONDITION {
-	// 	break
-	// 	}
-	// } // do while loop in golang mode
-
-	evenVals := []int{2, 4, 6, 8, 10, 12}
-	for i, v := range evenVals {
-		fmt.Println(i, v)
+	evenVals := []int{2, 4, 6, 8, 10}
+	for i := 1; i < len(evenVals)-1; i++ {
+		fmt.Println(i, evenVals[i])
 	}
+
+	
 }
 
 /*
