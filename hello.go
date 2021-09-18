@@ -24,7 +24,7 @@ func main() {
 	fmt.Println(addTo(3, a...))
 	fmt.Println(addTo(3, []int{1, 2, 3, 4, 5}...))
 }
-
+//
 /*
 	Literals:
 	// 0d54 is Decimal
