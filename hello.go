@@ -8,26 +8,24 @@ const (
 	nameKey = "name"
 )
 
-// const z = 20 * 10
-// var h = [12]int{1, 5: 4, 6, 10: 100, 15}
-// var j = [...]int{1,2,3,4,5,6,7,8,9,10,11,12} //j == h > true
-// var i []int
+type MyFuncOpts struct {
+	FirstName string
+	LastName string
+	Age int
+}
+func MyFunc(opts MyFuncOpts) error {
 
+}
+	
 func main() {
-	words := []string{"a", "cow", "smile", "gopher",
-	"octopus", "anthropologist"}
-	for _, word := range words {
-		switch size := len(word); size {
-		case 1, 2, 3, 4:
-			fmt.Println(word, "is a short word!")
-		case 5:
-			wordLen := len(word)
-			fmt.Println(word, "is exactly the right length:", wordLen)
-		case 6, 7, 8, 9:
-		default:
-			fmt.Println(word, "is a long word!")
-		}
-	}
+	MyFunc(MyFuncOpts {
+		LastName: "Patel",
+		Age: 50,
+	})
+	My Func(MyFuncOpts {
+		FirstName: "Joe",
+		LastName: "Smith",
+	})
 }
 
 /*
