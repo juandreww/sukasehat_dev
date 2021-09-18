@@ -8,24 +8,21 @@ const (
 	nameKey = "name"
 )
 
-type MyFuncOpts struct {
-	FirstName string
-	LastName string
-	Age int
+func addTo(base int, vals ...int) []int {
+	out := make([]int, 0, len(vals))
+	for _, v := range vals {
+	out = append(out, base+v)
+	}
+	return out
 }
-func MyFunc(opts MyFuncOpts) error {
 
-}
-	
 func main() {
-	MyFunc(MyFuncOpts {
-		LastName: "Patel",
-		Age: 50,
-	})
-	My Func(MyFuncOpts {
-		FirstName: "Joe",
-		LastName: "Smith",
-	})
+	fmt.Println(addTo(3))
+	fmt.Println(addTo(3, 2))
+	fmt.Println(addTo(3, 2, 4, 6, 8))
+	a := []int{4, 3}
+	fmt.Println(addTo(3, a...))
+	fmt.Println(addTo(3, []int{1, 2, 3, 4, 5}...))
 }
 
 /*
