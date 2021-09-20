@@ -21,7 +21,7 @@ var opMap = map[string]func(int, int) int{
 	"*": mul,
 	"/": div,
 }
-
+//
 func main() {
 	for i := 0; i < 5; i++ {
 		func(j int) {
