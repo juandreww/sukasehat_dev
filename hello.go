@@ -1,42 +1,46 @@
 package main
-
-import "fmt"
-// import "strconv"
-// import "errors"
-// import "math/rand"
-
-const (
-	idKey   = "id"
-	nameKey = "name"
+ 
+import (
+	"bufio"
+	"os"
+	"fmt"
+	"sort"
 )
-
-func add(i int, j int) int { return i + j }
-func sub(i int, j int) int { return i - j }
-func mul(i int, j int) int { return i * j }
-func div(i int, j int) int { return i / j }
-
-var opMap = map[string]func(int, int) int{
-	"+": add,
-	"-": sub,
-	"*": mul,
-	"/": div,
-}
-
+ 
 func main() {
-	for i := 0; i < 5; i++ {
-		func(j int) {
-			fmt.Println("printing", j, "from inside of an anonymous function")
-		}(i)
+ 
+	r := bufio.NewReader(os.Stdin)
+ 
+	var t int
+	fmt.Fscan(r, &t)
+ 
+	for i := 0; i < t; i++ {
+		var a, b, c, m int
+		fmt.Fscan(r, &a, &b, &c, &m)
+ 
+		fmt.Println(solve(a, b, c, m))
 	}
 }
-
-/*
-	Literals:
-	// 0d54 is Decimal
-	// 0o113 is Octal
-	// 0x4a is hexadecimal
-	// 40 is int
-	// 40u is unsigned int
-	// 40l is long
-	// 40ul is unsigned long
-*/
+ 
+func solve(a, b, c, m int) string {
+	max := a + b + c - 3
+ 
+	var arr []int
+	arr = append(arr, a, b, c)
+	sort.Ints(arr)
+ 
+	var min int
+ 
+	if arr[2] > arr[0] + arr[1] + 1 {
+		min = arr[2] - (arr[0] + arr[1] + 1)
+ 
+	} else {
+		min = 0
+	}
+ 
+	if m < min || m > max {
+		return "NO"
+	}
+ 
+	return "YES"
+}
