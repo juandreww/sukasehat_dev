@@ -21,7 +21,7 @@ func main() {
 		fmt.Println(solve(a, b, c, m))
 	}
 }
- 
+ //
 func solve(a, b, c, m int) string {
 	max := a + b + c - 3
  
