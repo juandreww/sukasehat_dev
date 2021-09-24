@@ -37,7 +37,7 @@ func solve(a, b, c, m int) string {
 	} else {
 		min = 0
 	}
- 
+	//
 	if m < min || m > max {
 		return "NO"
 	}
