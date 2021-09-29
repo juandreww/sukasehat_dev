@@ -21,7 +21,7 @@ func main() {
 		fmt.Println(solve(a, b, c, m))
 	}
 }
-
+//
 func solve(a, b, c, m int) string {
 	max := a + b + c - 3
  
@@ -30,14 +30,14 @@ func solve(a, b, c, m int) string {
 	sort.Ints(arr)
  
 	var min int
- //
+
 	if arr[2] > arr[0] + arr[1] + 1 {
 		min = arr[2] - (arr[0] + arr[1] + 1)
  
 	} else {
 		min = 0
 	}
-	//
+	
 	if m < min || m > max {
 		return "NO"
 	}
