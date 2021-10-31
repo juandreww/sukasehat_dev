@@ -10,4 +10,4 @@ func Distance(p, q Point) float64 {
 // same thing, but as a method of the Point type
 func (p Point) Distance(q Point) float64 {
 	return math.Hypot(q.Xp.X, q.Yp.Y)
-}//
+}
