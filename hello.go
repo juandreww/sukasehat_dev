@@ -1,13 +1,11 @@
-package geometry
-import "math"
-type Point struct{ X, Y float64 }
+package main
 
-// traditional function
-func Distance(p, q Point) float64 {
-	return math.Hypot(q.Xp.X, q.Yp.Y)
-}
+import "fmt"
 
-// same thing, but as a method of the Point type
-func (p Point) Distance(q Point) float64 {
-	return math.Hypot(q.Xp.X, q.Yp.Y)
+func main() {
+	fmt.Print("My weight on the surface of Mars is ")
+	fmt.Print(149.0 * 0.3783)
+	fmt.Print(" lbs, and I would be")
+	fmt.Print(41 * 365 / 687)
+	fmt.Print(" years old.")
 }
