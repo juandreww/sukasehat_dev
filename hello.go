@@ -2,10 +2,19 @@ package main
 
 import "fmt"
 
-func main() {//
-	fmt.Print("My weight on the surface of Mars is ")
-	fmt.Print(149.0 * 0.3783)
-	fmt.Print(" lbs, and I would be")
-	fmt.Print(41 * 365 / 687)
-	fmt.Print(" years old.")
-}//
+func main() {
+	const lightSpeed = 1680// km/s
+	var distance = 96300000// km
+	
+	var (
+		abc = 3
+		bcd = 4
+	)
+	
+	var speed, weight = 100, 30
+	var hoursPerDay, minutesPerHour = 24, 60
+	
+	weight -= 2
+	
+	fmt.Println(distance/lightSpeed/hoursPerDay, "days")
+}
