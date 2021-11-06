@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"strings"
 )
 
 func main() {
-	var num = rand.Intn(10) + 1
-	fmt.Println(num)
-	num = rand.Intn(10) + 1
-	fmt.Println(num)
+	fmt.Println("You find yourself in a dimly lit cavern.")
+	var command = "walk outside"
+	var exit = strings.Contains(command, "outside")
+	fmt.Println("You leave the cave:", exit)
 }
