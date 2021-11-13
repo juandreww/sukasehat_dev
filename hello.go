@@ -2,19 +2,12 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
-	"time"
 )
 
 func main() {
-	var myNumber = 19
-	for {
-		var randomNumber = rand.Intn(25)
-		fmt.Printf("The current random number is: %v\n", randomNumber)
-		if randomNumber == myNumber {
-			break;
-		}
-		time.Sleep(time.Second)
+	var count = 0
+	for count = 10; count > 0; count-- {
+		fmt.Println(count)
 	}
-	fmt.Println("You have found it.")
+	fmt.Println(count)
 }
