@@ -1,14 +1,13 @@
 package main
 
 import (
-  "fmt"
+	"fmt"
 )
 
 func main() {
-  third := 2.0 / 3
-  fmt.Println(third)
-  fmt.Printf("%v\n", third)
-  fmt.Printf("%f\n", third)
-  fmt.Printf("%.3f\n", third)
-  fmt.Printf("%4.2f\n", third)
+	third := 1.0 / 3.0
+	fmt.Println(third + third + third)
+	piggyBank := 0.1
+	piggyBank += 0.2
+	fmt.Println(piggyBank)
 }
