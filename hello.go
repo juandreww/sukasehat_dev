@@ -1,11 +1,11 @@
-// You can edit this code!
-// Click here and start typing.
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	var red uint16 = 65535
-	red++
-	fmt.Println(red)
-}
+	future := time.Unix(1900000000, 0)
+	fmt.Println(future)
+} 
