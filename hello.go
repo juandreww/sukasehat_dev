@@ -5,6 +5,7 @@ package main
 import "fmt"
 
 func main() {
-	var distance int64 = 41.3e12
-	fmt.Println(distance)
+	var distanceFrom int64 = 5.6e7
+	var distanceTo int64 = 4.01e8
+	fmt.Printf("Distance from Earth to Mars is around %v to %v\n", distanceFrom, distanceTo)
 }
