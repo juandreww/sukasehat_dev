@@ -2,10 +2,13 @@
 // Click here and start typing.
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/big"
+)
 
 func main() {
-	var distanceFrom int64 = 5.6e7
-	var distanceTo int64 = 4.01e8
-	fmt.Printf("Distance from Earth to Mars is around %v to %v\n", distanceFrom, distanceTo)
+	distance := new(big.Int)
+	distance.SetString("24000000000000000000", 10)
+	fmt.Println(distance)
 }
