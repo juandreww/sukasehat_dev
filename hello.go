@@ -1,21 +1,14 @@
-// You can edit this code!
-// Click here and start typing.
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"unicode/utf8"
+)
 
 func main() {
-	message := "uv vagreangvbany fcnpr fgngvba"
-	for i := 0; i < len(message); i++ {
-		c := message[i]
-		if c >= 'a' && c <= 'z' {
-			c = c + 13
-			if c > 'z' {
-				c = c - 26
-			}
-		}
-		fmt.Printf("%v : %c \n", c, c)
-		z := 'z' + 400
-		fmt.Printf("%v : %c \n", z, z)
-	}
+	question := "¿Cómo estás?"
+	fmt.Println(len(question), "bytes")
+	fmt.Println(utf8.RuneCountInString(question), "runes")
+	c, size := utf8.DecodeRuneInString(question)
+	fmt.Printf("First rune: %c %v bytes", c, size)
 }
