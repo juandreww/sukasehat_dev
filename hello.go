@@ -5,6 +5,7 @@ package main
 import "fmt"
 
 func main() {
-	var star byte = 'é'
-	fmt.Printf("%v\n", star)
+	c := 'a'
+	c = c + 3
+	fmt.Printf("%c", c)
 }
