@@ -1,15 +1,13 @@
+// You can edit this code!
+// Click here and start typing.
 package main
 
 import "fmt"
 
 func main() {
-	age := 25
-	marsAge := float64(age)
-	marsDays := 687.0
-	earthDays := 365.2425
-	marsAge = marsAge * earthDays / marsDays
-	fmt.Println("I am", marsAge, "years old on Mars.")
-
-	check := age > marsAge
-	fmt.Println(check)
+	var pi rune = 960
+	var alpha rune = 940
+	var omega rune = 969
+	var bang byte = 33
+	fmt.Print(string(pi), string(alpha), string(omega), string(bang))
 }
