@@ -7,7 +7,14 @@ import (
 )
 
 func main() {
-	var countdown = 10
-	countdown = 0.5
-	countdown = fmt.Sprintf("%v seconds", countdown)
+	launch := false
+	launchText := fmt.Sprintf("%v", launch)
+	fmt.Println("Ready for launch:", launchText)
+	var yesNo string
+	if launch {
+		yesNo = "yes"
+	} else {
+		yesNo = "no"
+	}
+	fmt.Println("Ready for launch:", yesNo)
 }
