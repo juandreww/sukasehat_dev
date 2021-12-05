@@ -2,12 +2,13 @@
 // Click here and start typing.
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
-	var pi rune = 960
-	var alpha rune = 940
-	var omega rune = 969
-	var bang byte = 33
-	fmt.Print(string(pi), string(alpha), string(omega), string(bang))
+	countdown := 10
+	str := "Launch in T minus " + strconv.Itoa(countdown) + " seconds."
+	fmt.Println(str)
 }
