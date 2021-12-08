@@ -2,19 +2,16 @@
 // Click here and start typing.
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	launch := false
-	launchText := fmt.Sprintf("%v", launch)
-	fmt.Println("Ready for launch:", launchText)
-	var yesNo string
-	if launch {
-		yesNo = "yes"
-	} else {
-		yesNo = "no"
+	string := "true"
+
+	switch string {
+	case "yes", "true", "1":
+		fmt.Println("String is true")
+	case "no", "false", "0":
+		fmt.Println("String is false")
 	}
-	fmt.Println("Ready for launch:", yesNo)
+
 }
